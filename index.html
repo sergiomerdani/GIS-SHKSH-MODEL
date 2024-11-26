@@ -103,7 +103,8 @@
           <button class="fa-button" id="exportPDF" title="Export PDF">
             Export PDF
           </button>
-          <button id="addLayerGroupButton">Add Layer Group</button>
+          <button id="addLayerGroupButton">Create Layer Group</button>
+          <button id="deleteLayerGroupButton">Delete Layer Group</button>
           <button id="updateLayerGroupBtn">Update Layer Group</button>
           <button id="filterAccepted">Filter Accepted</button>
           <div class="search-wrapper"></div>
@@ -193,7 +194,7 @@
     <div id="addLayerGroupModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Add New Layer Group</h2>
+        <h2>Create New Layer Group</h2>
         <label for="layerGroupName">Layer Group Name:</label>
         <input
           type="text"
@@ -207,6 +208,20 @@
       </div>
     </div>
     <div id="addLayerToGroupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Select Layer Group</h2>
+        <label for="layerGroupDropdown">Layer Group Name:</label>
+        <select id="layerGroupDropdown"></select>
+        <br /><br />
+        <label for="newLayerDropdown">Select Layer:</label>
+        <select id="newLayerDropdown"></select>
+        <br /><br />
+        <button id="submitButton">Submit</button>
+      </div>
+    </div>
+
+    <div id="deleteLayerGroupModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Select Layer Group</h2>
