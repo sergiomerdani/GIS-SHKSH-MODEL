@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "ol": "latest",
-    "ol-ext": "^4.0.10",
+    "ol-ext": "^4.0.26",
     "proj4": "^2.9.0"
   }
 }
